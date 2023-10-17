@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="crypto-js.min.js"></script>
+    <script src="enkripsi.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <div class="chat-container">
+            <div class="chat-box" id="chatBox1"></div>
+            <div class="input-container">
+              <input
+                type="text"
+                id="messageInput1"
+                placeholder="Tulis pesan..."
+              />
+              <button onclick="sendMessage1()">Kirim</button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="chat-container">
+            <div class="chat-box" id="chatBox2"></div>
+            <div class="input-container">
+              <input
+                type="text"
+                id="messageInput2"
+                placeholder="Tulis pesan..."
+              />
+              <button onclick="sendMessage2()">Kirim</button>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Isi pesan: <span id="isi_pesan"></span></td>
+        <td>Hasil enkripsi: <span id="hasil_enkripsi"></span></td>
+      </tr>
+    </table>
+
+    <script src="app.js"></script>
+  </body>
+</html>
